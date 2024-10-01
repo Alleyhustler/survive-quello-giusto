@@ -1,0 +1,320 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f1f1f;
+    color: #f4f4f4;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 18px; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('c7aa93a5264b6f8d241d58c0b36d829c.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 64px; /* Increased font size for title */
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.hero-content p {
+    font-size: 28px; /* Increased font size for subtitle */
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 40px; /* Increased button padding */
+    border: none;
+    font-size: 20px; /* Increased button font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Slightly rounded corners for the button */
+}
+
+.cta-button:hover {
+    background-color: #388E3C;
+}
+
+/* Other sections remain unchanged... */
+
+
+/* Metrics Section */
+/* Token Metrics Section */
+.metrics {
+    padding: 50px 20px; /* Padding for metrics section */
+    background-color: #1e1e1e; /* Darker background color */
+    text-align: center; /* Center text */
+    animation: fadeIn 0.5s ease-in; /* Fade-in animation */
+}
+
+.metrics h2 {
+    font-size: 42px; /* Increased title size */
+    margin-bottom: 40px; /* Space below title */
+    color: #4CAF50; /* Title color */
+    font-family: 'Raleway', sans-serif; /* New font for the title */
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.metrics h2:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.metrics-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on small screens */
+    gap: 20px; /* Space between items */
+}
+
+.metric-box {
+    background-color: #333; /* Box color */
+    padding: 20px; /* Box padding */
+    border-radius: 10px; /* Rounded corners */
+    width: 220px; /* Fixed width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for scale and shadow */
+}
+
+.metric-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.metric-box h3 {
+    font-size: 20px; /* Title size */
+    margin-bottom: 10px; /* Space below title */
+    color: #fff; /* Title color */
+    font-family: 'Raleway', sans-serif; /* New font for titles */
+}
+
+.metric-box p {
+    font-size: 18px; /* Paragraph size */
+    color: #ccc; /* Paragraph color */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* About Section */
+.about {
+    padding: 50px 20px; /* Padding for about section */
+    background-color: #1e1e1e; /* Background color */
+}
+
+.about h2 {
+    text-align: center; /* Center title */
+    font-size: 36px; /* Title size */
+    margin-bottom: 30px; /* Space below title */
+}
+
+.about-content {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+    font-size: 18px; /* Paragraph size */
+    line-height: 1.6; /* Line height for readability */
+    text-align: center; /* Center text */
+}
+
+/* Footer */
+footer {
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center text */
+    background-color: #121212; /* Background color */
+    color: #777; /* Text color */
+}
+
+/* Add the new Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* Adaptation Gallery Section */
+.gallery {
+    padding: 60px 20px; /* Padding for gallery section */
+    background-color: #1a1a1a; /* Darker background color */
+    text-align: center; /* Center text */
+    animation: fadeIn 0.5s ease-in; /* Fade-in animation for the gallery section */
+}
+
+.gallery h2 {
+    font-size: 42px; /* Increased title size */
+    margin-bottom: 20px; /* Space below title */
+    color: #4CAF50; /* Title color */
+    font-family: 'Raleway', sans-serif; /* New font for the title */
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.gallery h2:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.gallery-intro {
+    font-size: 20px; /* Intro text size */
+    margin-bottom: 40px; /* Space below intro */
+    color: #ccc; /* Intro text color */
+    font-family: 'Roboto', sans-serif; /* New font for the intro */
+}
+
+.gallery-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.gallery-item {
+    position: relative; /* For absolute positioning of caption */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Animation for scale */
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.gallery-item img {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    transition: transform 0.3s ease; /* Scale effect on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Scale on hover */
+}
+
+.gallery-caption {
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* Text color */
+    padding: 15px; /* Increased padding */
+    font-size: 18px; /* Caption text size */
+    font-family: 'Raleway', sans-serif; /* New font for captions */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Fade in and scale effect */
+    transform: translateY(10px); /* Start slightly below */
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1; /* Show caption on hover */
+    transform: translateY(0); /* Move into place */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Socials Section */
+.socials {
+    padding: 50px 20px; /* Padding for socials section */
+    background-color: #222; /* Background color */
+    text-align: center; /* Center text */
+}
+
+.socials h2 {
+    font-size: 36px; /* Title size */
+    margin-bottom: 20px; /* Space below title */
+    color: #4CAF50; /* Title color */
+    font-family: 'Raleway', sans-serif; /* Font for the title */
+}
+
+.socials p {
+    font-size: 18px; /* Paragraph size */
+    margin-bottom: 40px; /* Space below paragraph */
+    color: #ccc; /* Paragraph color */
+}
+
+.socials-links {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center links */
+    gap: 20px; /* Space between links */
+}
+
+.social-link {
+    background-color: #4CAF50; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.social-link:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
